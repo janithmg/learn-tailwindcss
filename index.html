@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <h2 class="font-bold">Color & Hight/Width</h2>
+    <div
+      class="h-[30px] min-w-[600px] bg-gradient-to-r from-orange-400 via-blue-400 to-green-500"
+    >
+      box
+    </div>
+    <br />
+    <div class="h-[30px] w-[300px] bg-gradient-to-l from-orange-100">box</div>
+    <br />
+    <div
+      class="h-[100px] w-[50%] bg-gradient-to-tr from-orange-400 to-yellow-400"
+    >
+      box
+    </div>
+    <br />
+    <div class="h-[30px] max-w-[500px] bg-gradient-to-br from-orange-100">
+      box
+    </div>
+    <br />
+    <div class="h-[30px] max-w-screen-sm bg-gradient-to-br from-orange-100">
+      box
+    </div>
+    <br />
+    <div
+      class="h-[30px] max-w-screen-sm mx-auto bg-gradient-to-br from-orange-400"
+    >
+      box
+    </div>
+    <br />
+    <h2 class="font-bold">Padding & Margin</h2>
+    <!-- padding & margin -->
+    <br />
+    <div class="p-10 m-10 h-[200px] bg-gradient-to-br from-orange-100">box</div>
+    <div class="py-10 my-10 h-[200px] bg-gradient-to-br from-orange-100">
+      box
+    </div>
+    <div class="px-10 mx-10 h-[200px] bg-gradient-to-br from-orange-100">
+      box
+    </div>
+    <br /><br />
+    <h2 class="font-bold">Typography</h2>
+    <br />
+    <div
+      class="h-auto px-10 mx-10 text-sm italic font-bold text-center underline bg-gradient-to-br from-orange-100"
+    >
+      box
+    </div>
+    <div
+      class="h-auto px-10 mx-10 text-sm italic font-bold tracking-wide text-left overline bg-gradient-to-br from-orange-100"
+    >
+      box
+    </div>
+    <div
+      class="h-auto px-10 mx-10 text-sm italic font-bold tracking-wider text-right bg-gradient-to-br from-orange-100"
+    >
+      box
+    </div>
+    <div
+      class="h-auto px-10 mx-10 text-sm italic font-bold tracking-wider text-justify underline bg-gradient-to-br decoration-dotted decoration-blue-400 from-orange-100"
+    >
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati magni
+      soluta nam qui quo ex voluptatibus sunt a quis vel voluptates facilis,
+      voluptate laudantium accusamus velit nesciunt,
+      <span class="">accusamus velit nesciunt </span>asperiores repudiandae
+      consectetur.
+    </div>
+    <div
+      class="h-auto px-10 mx-10 italic font-bold tracking-wider text-center text-transparent bg-clip-text via-orange-200 bg-gradient-to-br text-9xl from-green-500 to-red-400"
+    >
+      boxdddddf
+    </div>
+
+    <br /><br />
+    <h2 class="font-bold">Position</h2>
+
+    <br />
+    <h3>relative & absolute</h3>
+    <div class="relative h-[400px] bg-[yellow]">
+      <div class="absolute h-[50px] w-[50px] bg-[red] z-10 top-10 left-5"></div>
+      <br />
+    </div>
+    <br />
+    <h3>Z index</h3>
+    <div class="relative h-[200px] w-[100px] ml-2 bg-[yellow] z-10"></div>
+    <div class="relative h-[200px] w-[100px] -mt-5 bg-[red]"></div>
+
+    <br />
+    <h3>Inline block</h3>
+    <div
+      class="relative h-[200px] w-[100px] ml-2 inline-block bg-[yellow]"
+    ></div>
+    <div class="relative h-[200px] w-[100px] -mt-5 inline-block bg-[red]"></div>
+
+    <br />
+    <h3>Float</h3>
+    <div class="relative h-[200px] w-[100px] float-right bg-[yellow]"></div>
+    <div class="relative h-[200px] w-[100px] clear-right bg-[red]"></div>
+
+    <h3>Flex Default</h3>
+    <div class="flex">
+      <div class="relative h-[200px] w-[100px] bg-[yellow]"></div>
+      <div class="relative h-[200px] w-[100px] bg-[red]"></div>
+      <div class="relative h-[200px] w-[100px] bg-[yellow]"></div>
+    </div>
+    <br />
+    <h3>Flex Col</h3>
+    <div class="flex flex-col">
+      <div class="relative h-[200px] w-[100px] bg-[yellow]"></div>
+      <div class="relative h-[200px] w-[100px] bg-[red]"></div>
+      <div class="relative h-[200px] w-[100px] bg-[yellow]"></div>
+    </div>
+    <br />
+    <h3>Flex grow</h3>
+    <div class="flex flex-row">
+      <div
+        class="relative h-[200px] w-[100px] bg-[yellow] flex-grow gap-2"
+      ></div>
+      <div class="relative h-[200px] w-[100px] bg-[red] flex-grow gap-10"></div>
+      <div class="relative h-[200px] w-[100px] bg-[yellow] flex-grow"></div>
+    </div>
+
+    <br />
+    <h3>Flex Grow Gap</h3>
+    <div class="flex flex-row gap-10">
+      <div class="relative h-[200px] w-[100px] bg-[yellow] flex-grow"></div>
+      <div class="relative h-[200px] w-[100px] bg-[red] flex-grow"></div>
+      <div class="relative h-[200px] w-[100px] bg-[yellow] flex-grow"></div>
+    </div>
+
+    <br />
+    <h3>Flex Gap Align</h3>
+    <div
+      class="flex flex-row gap-10 bg-[green] p-10 items-center h-[50vh] justify-center"
+    >
+      <div class="relative h-[200px] w-[100px] bg-[yellow]"></div>
+      <div class="relative h-[200px] w-[100px] bg-[red]"></div>
+      <div class="relative h-[200px] w-[100px] bg-[yellow]"></div>
+    </div>
+
+    <br />
+    <h3>Grid</h3>
+    <div class="bg-[green] p-10 h-[50vh] grid grid-cols-2">
+      <div class="h-[50px]  bg-[yellow]"></div>
+      <div class="h-[50px] bg-[red]"></div>
+      <div class="h-[50px]  bg-[yellow] col-span-2"></div>
+    </div>
+
+    <br />
+    <h3>Border</h3>
+    <div class="bg-[green] p-10 h-[20vh] border-yellow-400 border-dashed border-[10px] rounded-l-full ">
+    </div><br>
+    <div class="bg-[green] p-10 h-[20vh] border-yellow-400 border-dashed border-[10px] rounded-r-full ">
+    </div>
+
+    
+    <br />
+    <h3>Shadow</h3>
+    <div class="bg-[#bfcabf] p-4">
+        <div class="w-32 h-32 m-6 bg-yellow-400 shadow-lg shadow-red-100">
+        </div>
+    </div>
+
+     
+    <br />
+    <h3>Transform</h3>
+    <div class="bg-[#bfcabf] p-4">
+        <div class="w-32 h-32 m-40 scale-50 rotate-45 bg-yellow-400 shadow-lg cursor-pointer shadow-red-100 hover:shadow-green-500">
+        </div>
+    </div>
+    
+  </body>
+</html>
